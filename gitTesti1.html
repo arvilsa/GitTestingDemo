@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8"
-<title>Mallipohja</title>
-<style type="text/css">
-label {
-	display:block;
-	width: 5em;
-	float: left;
-}
-</style>
-</head>
-<body>
-<form>
-<label>Nimi:</label>
-<input type="text" id="nimi"/>
-<input type="button" value="Napin teksti" onclick="laske()"/>
-</form>
-<div id="vastaus"></div>
-<script></script>
-</body>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Testitiedosto1</title>
+		<style type="text/css"></style>
+	</head>
+	<body>
+		
+			<label>Nimi:</label>
+			<input type="text" id="nimi"/>
+			<input type="button" value="Napppi 1" onClick="moikkaa()"/>
+			<label>Nimi:</label>
+			<input type="text" id="nimi"/>
+			<input type="button" value="Nappi 2" onClick="naytaIka()"/>
+		
+		<div id="vastaus"></div>
+		<script>
+			
+			function moikkaa(){
+				var nimi=document.getElementById("nimi");
+				console.log("moi" + nimi)
+			}
+			
+			function naytaIka(){
+				var ika=document.getElementById("ika");
+				console.log("olet "+ika+"-vuotias")
+			}
+		</script>
+	</body>
 
 </html>
