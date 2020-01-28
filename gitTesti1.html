@@ -15,12 +15,13 @@
 			<input type="text" id="ika"/>
 			<input type="button" value="Nappi 2" onClick="naytaIka()"/>
 		
-		<div class="container" id="vastaus"></div>
-		<script>
+		<div class="container" id="vastaus1"></div>
+		
+        <script>
 			
 			function moikkaa(){
 				var nimi=document.getElementById("nimi").value;
-				document.getElementById("vastaus")= "moi " + nimi)
+				document.getElementById("vastaus1").innerHTML= "moi " + nimi;
 			}
 			
 			function naytaIka(){
