@@ -7,26 +7,27 @@
 		
 	</head>
 	<body>
+        <h1>Branch: testing2</h1>
+        <input type="text" id="nimi"/>
+        <input type="button" value="Moikkaa" onClick="moikkaa()"/><label>Ikäsi:</label>
+        <input type="text" id="ika"/>
+        <input type="button" value="Kerro ikä" onClick="naytaIka()"/>
 		
-			<label>Nimi:</label>
-			<input type="text" id="nimi"/>
-			<input type="button" value="Napppi 1" onClick="moikkaa()"/>
-			<label>Ikäsi:</label>
-			<input type="text" id="ika"/>
-			<input type="button" value="Nappi 2" onClick="naytaIka()"/>
-		
-		<div class="container" id="vastaus1"></div>
+        <div  id="vastaus1"></div>
+        <div  id="vastaus2"></div>
+        
 		
         <script>
 			
 			function moikkaa(){
 				var nimi=document.getElementById("nimi").value;
-				document.getElementById("vastaus1").innerHTML= "moi " + nimi;
+				document.getElementById("vastaus1").innerHTML= "Moi " + nimi;
 			}
 			
 			function naytaIka(){
 				var ika=document.getElementById("ika").value;
-				console.log("olet "+ika+"-vuotias")
+                document.getElementById("vastaus2").innerHTML= "olet "+ika+"-vuotias"
+				
 			}
 		</script>
 	</body>
