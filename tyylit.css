@@ -1,12 +1,21 @@
 
+nav {
+    text-align: center;
+    margin-bottom: 30px;
+}
 body {
-    background-color: pink;
+    width: 90%
     border: solid 3px black;
+    background-color: beige;
 }
 h1 {
-    color: purple;
+    color: black;
     text-decoration: underline;
+    font-family: 'Coming Soon', cursive;
 }
 p {
     font-family: 'Coming Soon', cursive;
+}
+footer {
+    background-color: burlywood;
 }

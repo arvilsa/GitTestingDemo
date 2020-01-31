@@ -16,13 +16,19 @@
             </nav>
         </header>
         <form>
+        <label>Nimesi:</label>
         <input type="text" id="nimi"/>
-        <input type="button" value="Moikkaa" onClick="moikkaa()"/><label>Ikäsi:</label>
+        <input type="button" value="Moikkaa" onClick="moikkaa()"/><br><br>
+        <label>Ikäsi:</label>
         <input type="text" id="ika"/>
-        <input type="button" value="Kerro ikä" onClick="naytaIka()"/>
+        <input type="button" value="Kerro ikä" onClick="naytaIka()"/><br><br>
+        <label>Pituus cm:</label>
+        <input type="text" id="pituus"/>
+        <input type="button" value="Kerro pituus" onClick="naytaPituus()"/><br><br>
 		
         <div  id="vastaus1"></div>
         <div  id="vastaus2"></div>
+        <div  id="vastaus3"></div>
         </form>
 		
         <script>
@@ -37,10 +43,16 @@
                 document.getElementById("vastaus2").innerHTML= "olet "+ika+"-vuotias"
 				
 			}
+            function naytaPituus(){
+				var pituus=document.getElementById("pituus").value;
+                document.getElementById("vastaus3").innerHTML= pituus;
+				
+			}
 		</script>
-        <footer>
-            &#169 2020
-        </footer>
+
 	</body>
+    <footer>
+        &#169 2020
+    </footer>
 
 </html>
