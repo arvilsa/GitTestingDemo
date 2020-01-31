@@ -1,14 +1,12 @@
-body 
-{
+
+body {
     background-color: pink;
     border: solid 3px black;
 }
-h1 
-{
+h1 {
     color: purple;
     text-decoration: underline;
 }
-p 
-{
+p {
     font-family: 'Coming Soon', cursive;
 }
