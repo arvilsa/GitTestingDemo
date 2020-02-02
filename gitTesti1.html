@@ -25,14 +25,12 @@
             <label>Pituus cm:</label>
             <input type="text" id="pituus"/>
             <input type="button" value="Kerro pituus" onClick="naytaPituus()"/><br><br>
-            <label>Paino kg:</label>
-            <input type="text" id="paino"/>
-            <input type="button" value="Kerro paino" onClick="naytaPaino()"/><br><br>
+
         </form>
         <div  id="vastaus1"></div>
         <div  id="vastaus2"></div>
         <div  id="vastaus3"></div>
-        <div  id="vastaus4"></div>
+
 		
         <script>
 			
@@ -54,12 +52,9 @@
                 document.getElementById("pituus").value="";
 				
 			}
-            function naytaPaino(){
-				var paino=document.getElementById("paino").value;
-                document.getElementById("vastaus4").innerHTML= paino;
-                document.getElementById("pituus").value="";
-				
-			}
+
+            
+            
 		</script>
 
 	</body>
